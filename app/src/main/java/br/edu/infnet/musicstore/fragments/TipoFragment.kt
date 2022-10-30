@@ -25,7 +25,7 @@ class TipoFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentTipoBinding.inflate(inflater, container, false)
         val view = binding.root
 

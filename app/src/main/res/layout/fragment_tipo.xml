@@ -110,7 +110,7 @@
                 android:id="@+id/btn_list_all"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Listar Todos Instrumentos" />
+                android:text="Listar Todos Os Tipos" />
 
             <TextView
                 android:id="@+id/tv_all_tipos"
