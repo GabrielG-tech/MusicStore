@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TipoFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_nome_tipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nome da Família do Instrumento"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/salvar" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_nome_id_tipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Id do Tipo do Instrumento" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="8dp"
+                android:text="Tipo do Instrumento" />
+
+            <Button
+                android:id="@+id/btn_get_by_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultar pelo Id do Instrumento" />
+
+            <Button
+                android:id="@+id/btn_remove_by_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remover pelo Id do Instrumento" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_id_tipo_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Id do Tipo a ser Atualizado" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_nome_tipo_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Atualização do Tipo" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atualizar" />
+
+            <Button
+                android:id="@+id/btn_list_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Listar Todos Instrumentos" />
+
+            <TextView
+                android:id="@+id/tv_all_tipos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Esperando..." />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

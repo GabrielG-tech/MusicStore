@@ -1,4 +1,4 @@
-package br.edu.infnet.musicstore.repositorio
+package br.edu.infnet.musicstore.repositories
 
 import android.content.Context
 import androidx.room.Room
