@@ -15,7 +15,7 @@ interface InstrumentoDao {
     fun insert(instrumento: Instrumento)
 
     // Ler
-    @Query("SELECT * FROM instrumento WHERE instrumento.id = :id")
+    @Query("SELECT * FROM Instrumento WHERE Instrumento.id = :id")
     fun getById(id: Long): Instrumento
 
     // Atualizar
@@ -27,11 +27,11 @@ interface InstrumentoDao {
     fun delete(instrumento: Instrumento)
 
     // Pegar todos Instrumentos
-    @Query("SELECT * FROM instrumento")
+    @Query("SELECT * FROM Instrumento")
     fun getAll(): List<Instrumento>
 
     // Pegar todos Instrumentos pelo id do Tipo
-    @Query("SELECT * FROM instrumento WHERE tipoId = :id")
+    @Query("SELECT * FROM Instrumento WHERE tipoId = :id")
     fun getInstrumentosByTipoId(id: Long) : List<Instrumento>
     
 }

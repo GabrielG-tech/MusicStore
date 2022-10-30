@@ -17,7 +17,7 @@ interface TipoDao {
     fun insert(tipo: Tipo)
 
     // Read
-    @Query("SELECT * FROM tipo WHERE tipo.id = :id")
+    @Query("SELECT * FROM Tipo WHERE Tipo.id = :id")
     fun getById(id: Long): Tipo
 
     // Update
@@ -29,7 +29,7 @@ interface TipoDao {
     fun delete(tipo: Tipo)
 
 
-    @Query("SELECT * FROM tipo")
+    @Query("SELECT * FROM Tipo")
     fun getAll(): List<Tipo>
     
 }
